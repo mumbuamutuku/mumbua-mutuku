@@ -95,15 +95,15 @@ The application should now be running on http://localhost:8000.
 
 # Usage
 
-Register a new user by sending a POST request to /registration. You will receive an email for verification.
+- Register a new user by sending a POST request to /registration. You will receive an email for verification.
 
-Click on the verification link in the email to activate your account.
+- Click on the verification link in the email to activate your account.
 
-Log in with your registered user by sending a POST request to /token. Use the access token for authentication.
+- Log in with your registered user by sending a POST request to /token. Use the access token for authentication.
 
-Manage products and businesses using the provided endpoints.
+- Manage products and businesses using the provided endpoints.
 
-Upload product images and profile images as needed.
+- Upload product images and profile images as needed.
 
 # Contributing
 
