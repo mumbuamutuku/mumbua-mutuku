@@ -4,12 +4,12 @@ This is a FastAPI-based E-commerce project that allows users to create accounts,
 
 ## Features
 
-### User Authentication: Users can register and log in to manage their accounts and products.
-### User Verification: Email verification is implemented to ensure user authenticity.
-### Product Management: Users can create, list, view, update, and delete products.
-### Business Management: Users can update business information, including the business name, city, region, and logo.
-### Image Upload: Users can upload product images, which are resized and saved for display.
-### Product Details: Users can view detailed product information, including the associated business details.
+User Authentication: Users can register and log in to manage their accounts and products.
+User Verification: Email verification is implemented to ensure user authenticity.
+Product Management: Users can create, list, view, update, and delete products.
+Business Management: Users can update business information, including the business name, city, region, and logo.
+Image Upload: Users can upload product images, which are resized and saved for display.
+Product Details: Users can view detailed product information, including the associated business details.
 
 ## Getting Started
 
@@ -17,20 +17,20 @@ Follow these steps to get the project up and running on your local machine:
 
 ## Prerequisites
 
-### Python: Make sure you have Python installed on your computer.
+Python: Make sure you have Python installed on your computer.
 
-### Dependencies: Install project dependencies using pip install -r requirements.txt.
+Dependencies: Install project dependencies using pip install -r requirements.txt.
 
-### SQLite Database: The project uses SQLite for simplicity. You can modify the database settings in the Tortoise configuration if needed.
+SQLite Database: The project uses SQLite for simplicity. You can modify the database settings in the Tortoise configuration if needed.
 
-### Create a .env file with the following configuration:
+Create a .env file with the following configuration:
 
 ``` makefile
     
     EMAIL=your-email@gmail.com
     PASS=your-email-password
     SECRET=your-secret-key
-
+    
 ## Installation
 Clone the repository:
 
