@@ -4,12 +4,12 @@ This is a FastAPI-based E-commerce project that allows users to create accounts,
 
 ## Features
 
-User Authentication: Users can register and log in to manage their accounts and products.
-User Verification: Email verification is implemented to ensure user authenticity.
-Product Management: Users can create, list, view, update, and delete products.
-Business Management: Users can update business information, including the business name, city, region, and logo.
-Image Upload: Users can upload product images, which are resized and saved for display.
-Product Details: Users can view detailed product information, including the associated business details.
+- User Authentication: Users can register and log in to manage their accounts and products.
+- User Verification: Email verification is implemented to ensure user authenticity.
+- Product Management: Users can create, list, view, update, and delete products.
+- Business Management: Users can update business information, including the business name, city, region, and logo.
+- Image Upload: Users can upload product images, which are resized and saved for display.
+- Product Details: Users can view detailed product information, including the associated business details.
 
 ## Getting Started
 
@@ -17,81 +17,81 @@ Follow these steps to get the project up and running on your local machine:
 
 ## Prerequisites
 
-Python: Make sure you have Python installed on your computer.
+- Python: Make sure you have Python installed on your computer.
 
-Dependencies: Install project dependencies using pip install -r requirements.txt.
+- Dependencies: Install project dependencies using pip install -r requirements.txt.
 
-SQLite Database: The project uses SQLite for simplicity. You can modify the database settings in the Tortoise configuration if needed.
+- SQLite Database: The project uses SQLite for simplicity. You can modify the database settings in the Tortoise configuration if needed.
 
-Create a .env file with the following configuration:
+- Create a .env file with the following configuration:
 
-``` makefile
-    
-    EMAIL=your-email@gmail.com
-    PASS=your-email-password
-    SECRET=your-secret-key
+    ``` makefile
+        EMAIL=your-email@gmail.com
+        PASS=your-email-password
+        SECRET=your-secret-key
     
 ## Installation
-Clone the repository:
 
-``` bash
+1. Clone the repository:
 
-    git clone <repository-url>
+    ``` bash
 
-Change the directory:
+        git clone <repository-url>
 
-``` bash
+2. Change the directory:
 
-    cd fastapi-ecommerce-project
+    ``` bash
 
-Install the dependencies:
+        cd fastapi-ecommerce-project
 
-``` bash
+3. Install the dependencies:
 
-    pip install -r req.txt
+    ``` bash
 
-Start the FastAPI development server:
+        pip install -r req.txt
 
-``` bash
+4. Start the FastAPI development server:
 
-    uvicorn main:app --reload
+    ``` bash
+
+        uvicorn main:app --reload
 The application should now be running on http://localhost:8000.
 
 # API Endpoints
 
 ## Authentication
 
-POST /token: Generate a token for user authentication.
+`POST /token`: Generate a token for user authentication.
 
-POST /user/me: Get user details (requires authentication).
+`POST /user/me`: Get user details (requires authentication).
 
 ## User Registration and Verification
 
-POST /registration: Register a new user with email verification.
+`POST /registration`: Register a new user with email verification.
 
-GET /verification: Verify the user's email address by clicking on a verification link sent via email.
+`GET /verification`: Verify the user's email address by clicking on a verification link sent via email.
 
 ## Product Management
 
-POST /products: Create a new product (requires authentication).
+`POST /products`: Create a new product (requires authentication).
 
-GET /products: Get a list of all products.
+`GET /products`: Get a list of all products.
 
-GET /products/{id}: Get details of a specific product.
+`GET /products/{id}`: Get details of a specific product.
 
-DELETE /product/{id}: Delete a specific product (requires authentication).
+`DELETE /product/{id}`: Delete a specific product (requires authentication).
 
-PUT /product/{id}: Update a specific product (requires authentication).
+`PUT /product/{id}`: Update a specific product (requires authentication).
 
 ## Business Management
 
-PUT /business/{id}: Update business information (requires authentication).
+`PUT /business/{id}`: Update business information (requires authentication).
 
 ## Image Upload
 
-POST /uploadfile/profile: Upload a profile image (requires authentication).
+`POST /uploadfile/profile`: Upload a profile image (requires authentication).
 
-POST /uploadfile/product/{id}: Upload a product image (requires authentication).
+`POST /uploadfile/product/{id}`: Upload a product image (requires authentication).
 
 # Usage
 
