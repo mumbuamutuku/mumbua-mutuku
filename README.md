@@ -55,16 +55,22 @@ The application should now be running on http://localhost:5001.
 ## Authentication
 
 `POST /api/users/register`: Register a new user.
+
 `POST /api/users/login`: Log in with an existing user.
+
 `GET /api/users/current`: Gets the current user information
 
 
 ## Contacts
 
 `GET /api/contacts`: Get all contacts (requires authentication).
+
 `POST /api/contacts`: Create a new contact (requires authentication).
+
 `GET /api/contacts/:id`: Get a specific contact (requires authentication).
+
 `PUT /api/contacts/:id`: Update a specific contact (requires authentication).
+
 `DELETE /api/contacts/:id`: Delete a specific contact (requires authentication).
 
 ## Usage
