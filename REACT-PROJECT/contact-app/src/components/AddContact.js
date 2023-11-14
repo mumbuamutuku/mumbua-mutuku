@@ -1,4 +1,6 @@
 import React from "react";
+import { Navigate } from "react-router-dom";
+
 
 class AddContact extends React.Component {
     state = {
@@ -12,11 +14,19 @@ class AddContact extends React.Component {
             return 
         }
         this.props.addContactHandler(this.state);
-        this.setState({ name: "", email: "" })
-    }
+        this.setState({ name: "", email: "", redirectToHome: true });
+        //this.props.history.push("/");
+             
+    };
 
     
     render() {
+
+        // Check if redirectToHome is true, then navigate
+        if (this.state.redirectToHome) {
+            return <Navigate to="/" />;
+        }
+        
         return(
             <div className="ui main">
                 <h2> Add Contact </h2>
@@ -42,12 +52,13 @@ class AddContact extends React.Component {
                         onChange={ (e) => this.setState({email: e.target.value})} 
                         />
                     </div>
-                    <button className="ui button blue"> Add </button>
+                    <button className="ui button blue" > Add </button>
                 </form>
             </div>
-        )
+        );
     }
 
 }
 
 export default AddContact;
+//export default AddContact;
